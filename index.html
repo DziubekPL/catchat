@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>CatChat</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app">
+    <header><div class="logo">🐱</div><div><h1>CatChat</h1><p>Twój koci asystent AI</p></div><span class="pill">BETA</span></header>
+    <section id="messages" class="messages" aria-live="polite">
+      <article class="message assistant"><strong>CatChat</strong><p>Cześć! Jestem CatChat. O co chcesz mnie zapytać?</p></article>
+    </section>
+    <form id="chat-form">
+      <textarea id="prompt" rows="2" maxlength="4000" placeholder="Napisz wiadomość…" aria-label="Wiadomość"></textarea>
+      <button id="send" type="submit">Wyślij</button>
+    </form>
+    <p class="note">Wersja testowa. Nie wpisuj haseł ani prywatnych danych.</p>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
